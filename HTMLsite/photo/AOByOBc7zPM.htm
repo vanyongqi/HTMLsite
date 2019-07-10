@@ -1,0 +1,961 @@
+
+ 
+
+
+<!DOCTYPE html>
+<html lang="zh-cn">
+	<script>
+		(function(){
+			var ss = location.href;
+			var m = ss.substring(ss.lastIndexOf("/")+1);
+			if(screen.width <= 414){
+			 	window.document.location.href="/phone/materialPage/"+m+"";
+			}
+		})();
+	</script>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1" >
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	
+    <title>字母_设计_tackGIF动态图_表情包-SOOGIF</title>
+    <meta name="keywords" content="字母GIF,字母GIF素材,字母表情,设计GIF,设计GIF素材,设计表情,tackGIF,tackGIF素材,tack表情 ,GIF工具"/>
+	<meta name="description" content="SOOGIF提供丰富的字母GIF动图素材，设计GIF动图素材，tackGIF动图素材，斗图必备表情包下载，微信公众号、微博编辑必备GIF动图素材。" />
+	<link rel="stylesheet" href="https://www.soogif.com/css/plug.css">
+	<link rel="stylesheet" href="https://www.soogif.com/css/animate.css">
+	<link rel="stylesheet" href="https://www.soogif.com/css/nav.css">
+	<link rel="stylesheet" href="https://www.soogif.com/css/footer.css">
+	<link rel="stylesheet" href="https://www.soogif.com/css/box-shaow.css">
+	<link rel="stylesheet" href="https://www.soogif.com/css/sign-in.css?version=2.1.1.0">
+	<link rel="stylesheet" href="https://www.soogif.com/css/float.css">
+
+	  <script type='text/javascript'>
+	  	var _hmt = _hmt || [];
+	  	(function() {
+	      	var hm = document.createElement("script");
+	      	hm.src = "//hm.baidu.com/hm.js?37c68c083c2c85fe183a5e0224eb35a9";
+	      	var s = document.getElementsByTagName("script")[0]; 
+	      	s.parentNode.insertBefore(hm, s);
+	  	})();
+	   </script>
+</head>
+<body>
+
+	<!-- 这里是h1标签 -->
+	<h1 class="_h1">
+		
+			字母GIF
+		
+			设计GIF
+		
+			tackGIF
+		
+	</h1>
+
+	<!-- 这里是登录 -->
+	
+<!-- <c:set var="pageContext.request.contextPath" value="http://www.soogif.com" /> -->
+
+<html>
+	<div class="sign-container">
+		<!-- 登录页背景 -->
+		<div class="sign-container-background"></div>
+
+		<!-- 二维码登录 -->
+		<div class="qrcode-sign" style="display: none;">
+			<img class="container-background-image" src="/images/img/login/login-background.png"/>
+			<div class="container-action-area">
+				<div class="wechat-login-tips">微信扫码立即登录</div>
+				<div class="wechat-qrcode-scan">
+					<div class="wechat-qrcode-scan-content">
+						<img id="qrcode-login-img" style="width: 100%; height: 100%;" src="" onerror="this.src='/images/img/login/default-qrcode.png'"/>
+						<img class="wechat-logo" src="/images/img/login/login-wechat.png" />
+					</div>
+					<div class="wechat-qrcode-scan-tips">扫一扫关注公众号后登录</div>
+				</div>
+				<div class="telephone-sign-switch">手机号登录</div>
+				<div class="sign-agreement-error-tips"> </div>
+				<div class="sign-agreement">
+					<img class="agreement-select" src="/images/img/login/agreement-select.png"/>
+					<div class="agreement-link">勾选代表你同意《<a class="link-access" target="_blank" href="/html/agreement.html">会员协议声明</a>》</div>
+				</div>
+				<div class="switch-area">
+					<div class="switch-area-pointer" id="qrcode-to-register">新用户注册</div>
+				</div>
+				<div class="container-action-cancel">
+					<img src="/images/img/login/sign-cancel.png" />
+				</div>
+			</div>
+		</div>	
+
+		<!-- 手机号登录 -->
+		<div class="telephone-sign" style="display: none;">
+			<img class="container-background-image" src="/images/img/login/login-background.png"/>
+			<div class="container-action-area">
+				<div class="telephone-login-tips">手机号登录</div>
+				<div class="telephone-input telephone-login-phone-input">
+					<img src="/images/img/login/telephone-input-icon.png" />
+					<div class="cut-off"></div>
+					<input id="login-phone" type="" name="" placeholder="输入11位手机号码">
+				</div>
+				<div class="password-input telephone-login-pwd-input">
+					<img src="/images/img/login/password-input-icon.png" />
+					<div class="cut-off"></div>
+					<input id="login-pass" type="password" name="" value="" placeholder="输入密码">
+				</div>
+				<div class="telephone-login-status">
+					<img id="error-status-imgage" src="/images/img/login/input-error.png" />
+					<div class="status" id="login-error-status-tips"></div>
+					<div class="forget-password">忘记密码</div>
+				</div>
+				<div class="action-button telephone-login-button" id="telephone-login">
+					<div class="action-button-loader"></div>
+					登录
+				</div>
+				<div class="wechat-login-switch">微信登录</div>
+				<div class="sign-agreement">
+					<img class="agreement-select" src="/images/img/login/agreement-select.png"/>
+					<div class="agreement-link">勾选代表你同意《<a class="link-access" target="_blank" href="/html/agreement.html">会员协议声明</a>》</div>
+				</div>
+				<div class="switch-area">
+					<div class="switch-area-pointer" id="login-to-register">新用户注册</div>
+				</div>
+				<div class="container-action-cancel">
+					<img src="/images/img/login/sign-cancel.png" />
+				</div>
+			</div>
+		</div>
+
+		<!-- 手机号注册 -->
+		<div class="telephone-register" style="display: none;">
+			<img class="container-background-image" src="/images/img/login/register-background.png"/>
+			<div class="container-action-area">
+				<div class="telephone-login-tips">手机号注册</div>
+				<div class="telephone-input telephone-register-phone-input">
+					<img src="/images/img/login/telephone-input-icon.png" />
+					<div class="cut-off"></div>
+					<input id="register-phone" type="" name="" placeholder="输入11位手机号码">
+				</div>
+				<div class="identifying-code-area">
+					<div class="picture-code-area" style="display: flex;">
+						<input class="picture-code" id="register-picture-code" type="text" name="" placeholder="输入图形验证码">
+						<img id="load-register-picture-code" src="/authCode">
+					</div>
+					<div class="message-code-area" style="display: none;">
+						<input class="message-code" id="register-message-code" type="text" name="" placeholder="输入手机验证码">
+						<div class="count" id="load-register-message-code">重新发送(<b>60</b>)</div>
+					</div>
+				</div>
+				<div class="password-input telephone-register-pwd-input">
+					<img src="/images/img/login/password-input-icon.png" />
+					<div class="cut-off"></div>
+					<input id="register-password" type="password" name="" value="" placeholder="输入6位数以上密码">
+				</div>
+				<div class="telephone-register-status">
+					<img id="error-status-imgage" src="/images/img/login/input-error.png" />
+					<div class="status" id="register-error-status-tips"></div>
+				</div>				
+				<div class="action-button telephone-register-button" id="telephone-register">
+					<div class="action-button-loader"></div>
+					注册
+				</div>
+				<div class="switch-area">
+					<div class="switch-area-pointer" id="register-to-login">立即登录</div>
+				</div>
+				<div class="container-action-cancel">
+					<img src="/images/img/login/sign-cancel.png" />
+				</div>
+			</div>
+		</div>	
+		 
+		<!-- 忘记密码 -->
+		<div class="telephone-modify" style="display: none;">
+			<img class="container-background-image" src="/images/img/login/register-background.png"/>
+			<div class="container-action-area">
+				<div class="telephone-login-tips">更改密码</div>
+				<div class="telephone-input telephone-register-phone-input">
+					<img src="/images/img/login/telephone-input-icon.png" />
+					<div class="cut-off"></div>
+					<input id="forget-phone" type="" name="" placeholder="输入11位手机号码">
+				</div>
+				<div class="identifying-code-area">
+					<div class="picture-code-area" style="display: flex;">
+						<input class="picture-code" id="forget-picture-code" type="text" name="" placeholder="输入图形验证码">
+						<img id="load-forget-picture-code" src="/authCode">
+					</div>
+					<div class="message-code-area" style="display: none;">
+						<input class="message-code" id="forget-message-code" type="text" name="" placeholder="输入手机验证码">
+						<div class="count" id="load-forget-message-code">重新发送(<b>60</b>)</div>
+					</div>
+				</div>
+				<div class="password-input telephone-register-pwd-input">
+					<img src="/images/img/login/password-input-icon.png" />
+					<div class="cut-off"></div>
+					<input id="forget-password" type="password" name="" value="" placeholder="输入6位数以上密码">
+				</div>
+				<div class="forget-password-status">
+					<img id="error-status-imgage" src="/images/img/login/input-error.png" />
+					<div class="status" id="forget-error-status-tips"></div>
+				</div>
+				<div class="action-button telephone-register-button" id="modify-password">
+					<div class="action-button-loader"></div>
+					更改密码
+				</div>
+				<div class="switch-area">
+					<div class="switch-area-pointer" id="forget-to-login">立即登录</div>
+				</div>
+				<div class="container-action-cancel">
+					<img src="/images/img/login/sign-cancel.png" />
+				</div>
+			</div>
+		</div>
+	</div>
+</html>
+
+	<!-- 这里是注册 -->
+	
+
+	<!-- 这里是忘记密码 -->
+  	
+
+    <!-- 引用导航组件 -->
+    
+<!-- <c:set var="pageContext.request.contextPath" value="http://www.soogif.com" /> -->
+
+<html>
+	<div class="nav">
+		<div class="box">
+		    <div class="bo">
+		    	<a href="/" class="logo">
+		    		<img src="/images/img/img-home-page/logo.png" alt="">
+		    	</a>
+		        <div class="center">
+			        <!-- 首页 -->
+			        <a href="/" class="a a-1">首页</a>
+					<!-- 分类 -->
+					<a href="/sort/124" class="a a-3">分类</a>
+					<!-- 趣图 -->
+					<a href="/shareSatin" class="a a-4">趣图</a>
+					<!-- 接口 -->
+					<div class="_do wrap_api">
+				        <a href="http://open.soogif.com/" class="a a-5">接口</a>
+				        <div class="apis">
+							<a href="http://open.soogif.com/">动图API</a>
+							<a href="/ip">动图百科</a>
+							<a href="/platform">内容开放平台</a>
+				        </div>
+					</div>
+					<!-- 联系我们 -->
+					<a href="/html/contact.html" class="a a-6">联系我们</a>
+					<!-- 分割线 -->
+					<div class="area-divide"></div>
+					<!-- GIF工具 -->
+					<div class="_do wrap">
+						<a href="/compress" class="a a-2">在线GIF工具</a>
+						<div class="tools">
+							<a href="/compress">GIF压缩</a>
+							<a href="/crop">GIF裁剪</a>
+							<a href="/editor">GIF编辑</a>
+							<a href="/video">视频转GIF</a>
+							<a href="/gifTool">多图合成GIF</a>
+						</div>
+					</div>
+					<!-- 会员VIP特权 -->
+					<div class="vip-privileges-container">
+						<div class="vip-privileges">VIP特权</div>
+						<img class="privileges-icon" src="/images/img/img-home-page/privileges-icon.png" />
+					</div>
+
+		        </div>
+		        <div class="function1"></div>
+		    </div>
+		</div>
+		<div class="bu-right">
+			<div class="right">
+				<div class="bu-left clearfix">
+					<div class="search-1">搜索</div>
+			        <div class="search-wrap">
+			            <input type="" name="" class="in" id="in" placeholder="搜索你想要的GIF动图">
+			            <div class="searchWrap">
+			            	<div class="search-hot">
+			            		热门搜索
+			            	</div>
+			            	<div class="line"></div>
+			            	<ul>
+			            	</ul>
+				        </div>
+			            <a href="/" class="pl-after">
+			            	<img src="/images/img/img-home-page/logo.png" alt="">
+			            </a>
+			        </div>
+	          	</div>
+	        </div>
+	        <div class="bottom">
+	        	<div class="center">
+	        		<div class="hot">热门搜索</div>
+	        		<div class="c-sch clearfix">
+	        		    <div class="search-icon"></div>
+	        	      	<div class="focus" id="_focus"></div>
+				    </div>
+	        	</div>
+	        </div>
+	        
+		</div>
+	</div>
+
+	<!--续费提醒弹框 -->
+    <div class="tool-vip-reminder-container">
+		<div class="tool-vip-reminder-container-background"></div>
+
+		<div class="vip-reminder-content">
+			<div class="title-container">
+				<div class="title"> </div>
+				<div class="icon"><img src="/images/img/img-home-page/reminder-vip-normal.png" /></div>
+			</div>
+			<div class="desc-1"> </div>
+			<div class="desc-2"> </div>
+			<div class="reminder-to-vip">
+				<div class="re-single"></div>
+				<div class="re-multiple-left"></div>
+				<div class="re-multiple-right"></div>
+			</div>
+
+			<!-- 取消 -->
+			<div class="cancel">
+				<img style="width: 35px; height: 35px;" src="/images/img/login/sign-cancel.png">
+			</div>
+		</div>        
+	</div>
+</html>
+
+	<!-- 遮罩 -->
+	
+
+<div class="box-shaow">
+	<div class="central clearfix" imgid="11">
+		<div class="central-left clearfix">
+			<div class="new-add">
+				<div class="top">
+					<figure class="_dg">
+						<img src="" alt="" id="activeImg" class="test">
+						<div class="_ii"></div>
+					</figure>
+					<div class="pre" id="_pre"></div>
+					<div class="nex" id="_nex"></div>
+					<div class="collection-care"></div>
+				</div>
+				<div class="cen clearfix">
+					<div class="le clearfix">
+						<a href="#" class="labelled">搞笑动物</a> <a href="#" class="labelled">神烦</a> <a href="#" class="labelled">dog</a>
+					</div>
+				</div>
+				<div class="rig">
+					<span class="measure measure-1">图片尺寸: 380*254</span>
+					<br>
+					<span class="measure measure-2">图片大小: 0.66MB</span>
+					<div class="alink clearfix">
+						<a href="http://www.135editor.com/?soogif" class="insert" target="_black">插入135编辑器</a>
+					</div>
+				</div>
+			</div>
+			<div class="bottom">
+				<div class="con-down">
+					<div class="downloaded clearfix">
+						<div class="tips">下载</div>
+						<div class="included-1">
+							<a href="javascript:void(0)" class="load-1 downloadImg" downloadtype="2048">公众号下载&lt;2M</a>
+						</div>
+						<div class="included-2">
+							<a href="javascript:void(0)" class="load-2 downloadImg" downloadtype="1024">表情包下载&lt;1M</a>
+							<a href="javascript:void(0)" class="load-3 downloadImg" downloadtype="0">原图下载</a> 
+						</div>
+					</div>
+				</div>
+				<div class="con-make">
+					<div class="tips">
+						<span>在线编辑GIF</span>
+						<img src="/images/img/box-shaow/detail-new.png" />
+					</div>
+					<div class="gif-tool">
+						<div class="gif-1 gif-crop">
+							<img src="/images/img/box-shaow/detail-crop.png" />
+							<span>GIF裁剪</span>
+						</div>
+						<div class="gif-1 gif-editor">
+							<img src="/images/img/box-shaow/detail-edit.png" />
+							<span>添加文字</span>
+						</div>
+					</div>
+				</div>
+				<div class="tpsysm">
+					<div class="tpsysm-once">图片使用说明：</div>
+					<div class="tpsysm-twice">新媒体图文使用动图，请标注“<span>动图来自SOOGIF</span>”</div>
+					<a class="tpsysm-xieyi" href="https://www.soogif.com/html/website/Agreement.html" target="_blank">SOOGIF用户服务协议</a>
+				</div>
+			</div>
+		</div>
+		<div class="opcity"></div>
+	</div>
+	<div class="moreimg-text">更多相似图片</div>
+	<div class="_will-float">
+		<div id="container-float">
+
+		</div>
+	</div>
+</div>
+
+	<!-- 底部 -->
+      
+
+<html>
+	<!-- 这里是底部导航 -->
+	<div class="footer">
+		<div class="center clearfix">
+			<div class="left clearfix">
+				<a href="/html/website/friendship.html" class="z-1">友情链接</a>
+				<a href="/html/website/Agreement.html" class="z-1">用户服务协议</a>
+				<a href="/aboutus" class="z-1">关于我们</a>
+				<a href="/telus" class="z-1">加入我们</a>
+				<p class="z-1">联系我们</p>
+			</div>
+			<div class="between clearfix">
+				<span class="codes-1">
+					<div class="codes"></div>
+				</span>
+				<span class="codes-2">
+					<div class="codes"></div>
+				</span>
+				<a href="http://weibo.com/shenmeguijj" class="codes-3"></a>
+			</div>
+			<div class="right">
+				<p class="mail">邮箱：official@whatthehell.cn</p>
+				<a target="_blank" href="http://shcainfo.miitbeian.gov.cn" class="url">沪ICP备15032247号-2</a>
+			</div>
+		</div>
+	</div>
+</html>>
+
+	<!-- 动画 -->
+	<div class="_load"></div>
+
+	<!-- 没有更多了 -->
+	<div class="_nomore">
+		<div class="_left"></div>
+		<p class="_center">没有更多了</p>
+		<div class="_right"></div>
+	</div>
+    
+    <!--百度广告开始-->
+    <!--<div class="baidurb-left">
+		
+		<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+		<ins class="adsbygoogle"
+		     style="display:inline-block;width:140px;height:350px"
+		     data-ad-client="ca-pub-6306917172755727"
+		     data-ad-slot="9188972427"></ins>
+		<script>
+		(adsbygoogle = window.adsbygoogle || []).push({});
+		</script>
+    </div>-->
+    <!--百度广告结束-->
+	<script src="/js/jquery.min.js"></script>
+	<script src="/js/core.js"></script>
+	<script src="/js/cipher-core.js"></script>
+	<script src="/js/tripledes.js"></script>
+	<script src="/js/mode-ecb.js"></script>
+	<script src="/js/state.js"></script>
+	
+	<script src="/js/imagesLoaded.js"></script>
+	<script src="/js/waterfall.js"></script>
+	<script>
+		$('#container-float').waterfall({
+		    itemCls: 'item',
+		    colWidth: 276,  
+		    gutterWidth: 16,
+		    gutterHeight: 16,
+		    $container:null
+		});
+	</script>
+	<script src="/js/plug.js"></script>
+	<script src="/js/nav.js"></script>
+	<script src="/js/jquery.qrcode.min.js"></script>
+	<script src="/js/public.js"></script>
+	
+	
+	<script src="/js/sign-in.js"></script>
+	<script src="/js/count/count-public.js"></script>
+	<script src="/js/website/relevant-lunbo.js"></script>
+	<script>
+		window.addEventListener("popstate", function(){
+		    window.location.href = '/';
+		}, false)
+		var jiathis_config = {};
+		$(function(){
+			//加密的私钥
+			var key = '12345678';
+			// DES加密
+			function encryptByDES(message) {
+				//把私钥转换成16进制的字符串
+				var keyHex = CryptoJS.enc.Utf8.parse(key);
+				//模式为ECB padding为Pkcs7
+				var encrypted = CryptoJS.DES.encrypt(message, keyHex, {
+					mode: CryptoJS.mode.ECB,
+					padding: CryptoJS.pad.Pkcs7
+				});
+				//加密出来是一个16进制的字符串
+				return encrypted.ciphertext.toString();
+
+			}
+			
+			var data_result = [];
+			// 登录状态
+			if(window.localStorage["state"] == 1){ 
+				accpt();
+			}else{
+				getImg('AOByOBc7zPM');
+			}
+
+		    // 下载图片
+			$(document).on("click", ".downloadImg", function(){
+				var type = $(this).attr('downloadType');
+				var id = $(".central").attr('imgId');
+				location.href="/download/"+type+"/"+id;
+			});
+
+			// 遮罩右边的小图点击
+			var $activeImg = null;
+			$(document).on('click','.aside',function(){
+				$activeImg = $(this);
+				var id = $activeImg.attr('imgId');
+				var click_form = 'pop';
+				getImg(id,click_form);
+			});
+
+			//点击gif裁剪
+			$(".con-make .gif-1.gif-crop").click(function(){ 
+				var _src = $("#activeImg").attr("src");
+				_src = _src.replace(".mp4",".gif")
+				if(_src){ 
+					var link = document.createElement("a");
+					link.target = "_blank";
+					link.href = "/crop?url="+_src;
+					document.body.appendChild(link);
+					link.click();
+					document.body.removeChild(link);
+					delete link;
+				}
+			});
+			//点击gif编辑//点击gif裁剪
+			$(".con-make .gif-1.gif-editor").click(function(){ 
+				var _src = $("#activeImg").attr("src");
+				_src = _src.replace(".mp4",".gif")
+				if(_src){ 
+					var link = document.createElement("a");
+					link.target = "_blank";
+					link.href = "/editor?url="+_src;
+					document.body.appendChild(link);
+					link.click();
+					document.body.removeChild(link);
+					delete link;
+				}
+			});
+
+			// 作者点击
+			$('.box-shaow .central-left .bottom .prison1').click(function(){
+				var _face = $(this).find('img').attr('data-img');
+				var link2 = document.createElement("a");
+				link2.target = "_blank";
+				if(_face == "true"){
+					var ds = $(this).find('img').attr('data-id');
+					link2.href = "/html/gifupload/foreign.html?"+ds+"";
+				}else{
+					link2.href = "javascript:void(0)";
+				};
+				document.body.appendChild(link2);
+				link2.click();
+				document.body.removeChild(link2);
+				delete link2;
+			})
+
+			// 弹窗工具下载切花
+			$('.box-shaow .central-left .bottom .flg-down').click(function(){
+				$('.box-shaow .central-left .bottom .flg-make').removeClass('flg-active');
+				$('.box-shaow .central-left .bottom .flg-down').addClass('flg-active');
+				$('.con-down').css('display','block');
+				$('.con-make').css('display','none');
+			})
+			$('.box-shaow .central-left .bottom .flg-make').click(function(){
+				$('.box-shaow .central-left .bottom .flg-down').removeClass('flg-active');
+				$('.box-shaow .central-left .bottom .flg-make').addClass('flg-active');
+				$('.con-down').css('display','none');
+				$('.con-make').css('display','block');
+			})
+
+			// 收藏大心
+			$('.box-shaow .central-left .top .collection-care').click(function(){
+				if(window.localStorage["state"] == 1){
+					$(this).toggleClass('this-care');
+					var user_id = window.localStorage["id"];
+					if($(this).siblings('figure').find('img').attr('src')){
+						var _link = $(this).siblings('figure').find('img').attr('src').replace('_s400x0','');
+					}else{
+						var _link = $(this).siblings('figure').find('video').attr('src').replace('.mp4','.gif');
+					}
+//					var _link = $(this).siblings('figure').find('img').attr('src').replace('_s400x0','');
+					var link_height = $(this).siblings('figure').attr('data-massage');
+					var imageId = $('.box-shaow .central').attr('imgId');
+					var tag = 0;
+					if($(this).hasClass('this-care')){
+						Collection(user_id,_link,link_height,imageId,tag)
+						// console.log('增加')
+					}else{
+						dele(user_id,_link)
+						// console.log('删除')
+					}
+				}else{
+					$('._Sign1').css('display','block');
+				}
+			})
+
+			// 收藏心封住函数
+			function Collection(user_id,_link,link_height,imageId,tag){
+				$.ajax({
+					url:'/addmycollect',
+					type:'post',
+					dataType:'json',
+					data:{
+						parentId:user_id,
+						collectImgUrl:_link,
+						hight:link_height,
+						imageId:imageId,
+						tag:tag
+					},
+					success:function(result){
+						accpt();
+					}
+				}) 
+			}
+
+			// 收藏的gif删除封装函数
+			function dele(user_id,_link){
+				$.ajax({
+					url:'/cancle',
+					type:'post',
+					dataType:'json',
+					data:{
+						parentId:user_id,
+						imgUrl:_link
+					},
+					success:function(result){
+						accpt();
+					}
+				})
+			}
+
+			// 为遮罩封装函数
+			function getImg(id,click_form){
+				$(".central").attr("imgId",id);
+				var date = new Date();
+			    date.setTime(date.getTime()+30*1000);
+				var timesc = new Date().getTime()
+				timesc = timesc.toString();
+				let str1 = encryptByDES(timesc);
+				document.cookie="YF-Ugrow-G0="+str1 + "; expires = " + date.toGMTString();
+				// if(window.localStorage["state"] == 1){ 
+				// 	accpt();
+				// }
+				// 大图
+				$.ajax({
+					dataType:'json',
+					type:'GET',
+					url:"/materialJson/" + id,
+					data:{clickFrom: click_form},
+					success:function(result){
+						if(result.code!=0){
+							return;
+						}
+						var material = result.data.material;
+						if(window.localStorage["state"] == 1){
+							if(data_result.indexOf(material.url) !== -1){
+								$('.box-shaow .central-left .top .collection-care').addClass('this-care');
+							}else{
+								// console.log('这里没有')
+								$('.box-shaow .central-left .top .collection-care').removeClass('this-care');
+							}
+						}
+						// 下面是文字
+						var html = "", htmlrb = '';
+						htmlrb='<div class="baidurb-left"><iframe src="/html/baiduleft.html" scrolling="no" marginheight="0" marginwidth="0"></iframe></div>';
+						$('.box-shaow').append(htmlrb)
+						if(material.subText){
+							$.each(material.subText.split(" "),function(n,v){
+								if(v&&n<4){
+									html += '<a href="/search/2/'+v+'" class="labelled search_query">'+v+'</a>';
+								}
+							});
+						}
+						$('.box-shaow .central-left .top figure').attr('data-massage',Math.round((material.height/material.width)*288)); 
+						$(".insert").attr("href","http://www.135editor.com/?action=appendimg&uri="+material.url);
+						$(".insertxmy").attr("href","http://www.xmyeditor.com/?soogif");
+
+						$(".box-shaow .central-left .le").html(html);
+
+							$('#activeImg').imagesLoaded(function(){
+								$('._ii').css('display','none');
+								$('#activeImg').css('display','block');
+								$('#activeImg').attr('src',material.url);
+							});
+
+						if(material.flag){
+							var htmlf = '<a href="https://giphy.com/" class="catente" target="_blank"><img src="/images/img/box-shaow/catente.png"/></a>'
+							$('.box-shaow .central-left .top figure').append(htmlf)
+						}else{
+							var originUserUrl = "https://www.soogif.com/html/website/foreign.html?uid=" + material.publisher 
+							var htmlf = '<a href="' + originUserUrl + '" class="catente" target="_blank"><img src="/images/img/box-shaow/catente.png"/></a>'
+							$('.box-shaow .central-left .top figure').append(htmlf)
+						}
+//						$('#activeImg').imagesLoaded(function(){
+//							$('._ii').css('display','none');
+//							$('#activeImg').css('display','block');
+//							$('#activeImg').attr('src',material.url);
+//						});
+						$('.measure-1').html('图片尺寸:'+material.width+'*'+material.height+'');
+						$(".measure-2").html('图片大小:'+((material.size/1024)/1000).toFixed(2)+'MB');
+						// 作者
+						if(result.data.author){
+							var pi = '';
+							pi += '<img src="'+result.data.author.face+'" data-img="true" data-id="'+result.data.author.id+'">';
+							$('.box-shaow .central-left .bottom .prison1').html(pi);
+							$('.box-shaow .central-left .bottom .prison').css('display','block');
+							$('.box-shaow .central-left .bottom .prison2').html(result.data.author.nickname);
+							window.localStorage["gif-authorname"] = result.data.author.nickname;
+						}else{
+							var pi = '';
+							pi += '<img src="/images/website/photo/photo6.gif" data-img="false">';
+							$('.box-shaow .central-left .bottom .prison1').html(pi);
+							$('.box-shaow .central-left .bottom .prison2').html(' ');
+						};
+
+						
+						jiathis_config.url = "https://www.soogif.com/materialPage/"+id;
+						jiathis_config.pic = material.url;
+					}
+				});
+			}
+			// 为遮罩封装函数在这里结束
+
+			// 登录状态
+			if(window.localStorage["state"] == 1){
+				var data_result = []; 
+				$.ajax({
+					url:'/show',
+					type:'post',
+					dataType:'json',
+					data:{
+						parentId:window.localStorage["id"]
+					},
+					success:function(result){
+						var list = result.result;
+						$.each(list,function(a,b){
+							data_result.push(b.collectImgUrl.replace('_s400x0',''));
+						});
+						console.log(data_result);
+						// 页面初步加载
+				        findThemeGif('AOByOBc7zPM',0,function(html){
+				        	var $elems = $(html);
+				        	$elems.imagesLoaded(function(){
+					            $('#container-float').waterfall('append', $elems, function(){
+					            	$('.footer').css('display','block');
+					            });
+				          	});
+				        });
+					}
+				})
+			}else{
+				// 页面初步加载
+		        findThemeGif('AOByOBc7zPM',0,function(html){
+		        	var $elems = $(html);
+		        	$elems.imagesLoaded(function(){
+			            $('#container-float').waterfall('append', $elems, function(){
+			            	$('.footer').css('display','block');
+			            });
+		          	});
+		        });
+			}
+
+			// 滚动条滚动异步加载页面
+			  var falg = true;
+			  var _ST = 0;
+			$(window).scroll(function(){
+				// console.log($(document).height())
+				// console.log($(this).scrollTop())
+				// console.log($(this).height())
+			    if ($(document).height() - $(this).scrollTop() - $(this).height() < 300){
+			        if ($("._nomore").css("display") !== "none") {
+			           	$('._load').css('display', 'none');
+			           	falg = false;
+					};
+				    if (falg){
+						falg = false;
+						_ST = $('.item').length;
+				        findThemeGif('AOByOBc7zPM',_ST,function(html){
+				        	var $elems = $(html);
+//				        	$elems.imagesLoaded(function() {
+					            $('#container-float').waterfall('append', $elems, function(){
+					            	
+					            });
+					            $('._loadback').css('opcity', '1');
+					            $('._load').css('display', 'block');
+					            if ($("._nomore").css('display') == "none") {
+					              	falg = true;
+					            };
+//				          	});
+				        });
+				    };
+			    };
+			});
+
+			//瀑布流滚动加载封装函数
+			function findThemeGif(id, _ST, func){
+				_hmt.push(['_trackEvent', '单页面', 'scroll', '加载更多']);
+			    var size = 20;
+			    var html = "";
+			    $(document).ajaxStart(function(){
+			      	$('._load').css('display', 'block');
+			    });
+			    var date = new Date();
+			    date.setTime(date.getTime()+30*1000);
+			    var timesc = new Date().getTime()
+			    timesc = timesc.toString();
+			    let str1 = encryptByDES(timesc);
+			    document.cookie="YF-Ugrow-G0="+str1 + "; expires = " + date.toGMTString() + "; path = /themeMaterials";
+//			    alert(str1)
+			    $.ajax({
+				    dataType:'json',
+					type:'GET',
+					url:'/material/recommend',
+					data:{pid:id,size:8,_ST:_ST},
+				    success: function(result){
+				        if (result.code == 0) {
+//				        	console.log('记载')
+					        var list = result.data.list;
+					        //没有更多了
+					        if (list.length == 0) {
+					            $('._load').css('display','none');
+					            $("._nomore").css('display','block');
+					        };
+					        $.each(list,function(i, n){
+    	                    	var arr = ['#15CAFA','#F3395B','#40CC66','#EEDA0C','#00D339'] 
+    							var res = [];
+    							for (var x = 0, len = arr.length; x < len; x++){
+    							  	var j = Math.floor(Math.random() * arr.length);
+    							  	res[x] = arr[j];
+    							  	arr.splice(j, 1);
+    							}
+					        	if(n.height == undefined){
+    		                    	var _loopwidth = '';
+    		                    	if(n.size < 500*1024){
+    		                    		_loopwidth = '200'
+    		                    	}else if(n.size >= 500*1024 && n.size < 1000*1024){
+    		                    		_loopwidth = '220'
+    		                    	}else if(n.size >= 1000*1024 &&n.size < 2000*1024){
+    		                    		_loopwidth = '240'
+    		                    	}else if(n.size >= 2000*1024 && n.size < 3000*1024){
+    		                    		_loopwidth = '280' 
+    		                    	}else if(3000*1024 >= n.size){
+    		                    		_loopwidth = '300'
+    		                    	}else{
+    		                    		_loopwidth = '300';
+    		                    	}
+    		                        html += '<a href="/materialPage/'+n.sid+'" title="'+n.subText+'" class="item T-show prev-sort" style="height:'+_loopwidth+'px;background:'+res[2]+'" imgId=' + n.sid + ' click_from ="theme">';
+					        	}else{
+    								html += '<a href="/materialPage/'+n.sid+'" title="'+n.subText+'" class="item T-show prev-sort" style="height:'+n.height*288/n.width+'px;background:'+res[2]+'" imgId=' + n.sid + ' click_from ="theme">';
+					        	}
+                                html += '<figure>';
+                                var url = n.url;
+//                              if (n.size > 20 * 1000 * 1000) {
+//                                  url = n.url + "_new";
+//                              }
+
+                                html += '</figure>';
+                                html += '<div class="care">'
+                                if(window.localStorage["state"] == 1){
+                                	if(data_result.indexOf(url) !== -1){
+                                		html += '<div class="care1 care2" id="_care"></div>'
+                                	}else{
+                                		html += '<div class="care1" id="_care"></div>'
+                                	}
+                                }else{
+                                	html += '<div class="care1" id="_care"></div>'
+                                }
+					  			html +=	'</div>'
+                                html +='<div class="shaow">'
+                                if(n.subText == undefined){
+                                	html += '<span></span>'
+                                }else{
+                                	$.each(n.subText.split(" "),function(a,v){
+                                		if(a < 3 && v !== ""){
+                                			html += '<span>#'+v+'</span>'
+                                		}
+                                	})
+                                }
+                                html += '</div>'
+                                html += '</a>';
+                                setTimeout(function(){
+//                              	if(n.mp4Status == 0){
+//                              		var aaa = url.substr(-3,3);
+//										if(aaa == 'gif'){
+//											url = url.replace(".gif",".mp4")
+//										}else{
+//											url = url + ".mp4";
+//										}
+//		                        		var _imgStr = '<video src="' + url + '" style="height:100%;object-fit:cover;" alt="' + (n.subText ? n.subText: "") + '" loop="loop" autoplay="autoplay" class="video"/>';
+//		                        	}
+//                              	if(n.mp4Status == 1){
+		                        		var _imgStr = '<img src="' + url + '_s400x0" style="height:100%;object-fit:cover;" alt="' + (n.subText ? n.subText: "") + '"/>';
+//		                        	}
+//                              	url = url.replace(".gif",".mp4");
+//                              	var _imgStr = '<video src="' + url + '" style="height:100%;object-fit:cover;" alt="' + (n.subText ? n.subText: "") + '" loop="loop" autoplay="autoplay" class="video"/>';
+//                              	var _imgStr = '<img src="' + url + '_s400x0" style="height:100%;object-fit:cover;" alt="' + (n.subText ? n.subText: "") + '"/>';
+                                	$(".item[imgId='"+n.sid+"']").find("figure").html(_imgStr);
+                                },1000);
+					        });
+				        };
+				        func(html);
+//				        var video = $('.video');
+//				        for(var i=0;i<video.length;i++){
+//				        	video[i].play();
+//				        }
+				    }
+			    });
+			  // 封装函数在这里结束 
+			};
+
+
+			// 登录接收收藏数据
+			function accpt(){
+				$.ajax({
+					url:'/show',
+					type:'post',
+					dataType:'json',
+					data:{
+						parentId:window.localStorage["id"]
+					},
+					success:function(result){
+						data_result = [];
+						var list = result.result;
+						$.each(list,function(a,b){
+							data_result.push(b.collectImgUrl.replace('_s400x0',''));
+						});
+						// console.log(data_result);
+						getImg('AOByOBc7zPM');
+						
+					}
+				})
+			}
+		    // 本次js在这里结束
+		});
+	</script>
+</body>
+</html>

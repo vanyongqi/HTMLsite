@@ -1,0 +1,142 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>🐷&nbsp;&nbsp;算法与数据结构</title>
+     <style type = "text/css"> @import "dock.css"</style>
+     <style>
+  .body{
+      
+             background-color: black;
+            background-image:url("photo/89730145b4046409d1c4db699d7277c8.jpg");
+         }
+   .self{
+         height:2000px;
+         position: absolute;
+         margin: auto;
+         left: 0;
+         right: 0;
+         background-color:white;
+            /* background-color:rgba(247,238,238,0.93);*/
+             filter:alpha(Opacity=60);-moz-opacity:0.6;opacity: 0.6;
+         width: 967px;
+             border-radius: 2%;
+
+     }
+    .eaasy{
+        width:900px;
+        height: 200px;
+        position: absolute;
+         margin: auto;
+         left: 0;
+         right: 0;
+         background-color:white;
+         border-radius: 3%;
+         }
+         .clear{
+             clear:both;
+         }
+    </style>
+</head>
+
+<body  class="body">
+    <div class="self"><h2 style="text-align: center">Data structure & Algorithm</h2>
+    <p style="text-align: right;font-family: 楷体">算法的本质在于自由.&nbsp;&nbsp;&nbsp;&nbsp;————&nbsp;yongqi·van&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p><br><br><br>
+</p></div><br><br><br><br><br><br>
+     <div class="eaasy" onclick="window.open('https://blog.csdn.net/qq_41722524/article/details/86653049')" style="text-align: center"><h2>链表</h2><p style="text-align: left;font-family: 楷体"> 关于链表<br>
+链表（Linked list）是一种常见的基础数据结构，是一种线性表，但是并不会按线性的顺序存储数据，而是在每一个节点里存到下一个节点的指针(Pointer)。由于不必须按顺序存储，链表在插入的时候可以达到O(1)的复杂度，比另一种线性表顺序表快得多，但是查找一个节点或者访问特定编号的节点则需要O(n)的时间，而顺序表相应的时间复杂度分别是O(logn)和O(1)。
+单链表
+第一个部分保存或者显示关于节点的信息，第二个部分存储下一个节点的地址。单向链表只可向一个方向遍历。
+链表还用来构建许多其它数据结构，如堆栈，队列等等。</p></div>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br>
+     <div class="eaasy" onclick="window.open('https://blog.csdn.net/qq_41722524/article/details/88376726')" style="text-align: center"><h2>二叉树</h2><p style="text-align: left;font-family: 楷体">采用递归的方式来创建并遍历二叉树，从理解上而言是非常简单的。
+
+具体实现代码如下（运行环境dev C++）：https://github.com/vanyongqi/Algorithm/blob/master/BuildTree.cpp
+
+首先 先明白二叉树的结构：节点由一个数据域和两个指针域分别指向着该节点的左孩子和右孩子。
+
+ typedef struct BTree{
+ 	char data;
+ 	struct BTree *lchild;
+ 	struct BTree *rchild;
+ }BinTree,*Btree;
+二叉树的创建：
+</p></div><br><br><br><br><br><br><br><br><br><br><br><br><br>
+     <div class="eaasy" onclick="window.open('https://blog.csdn.net/qq_41722524/article/details/86662223')" style="text-align: center"><h2>汉诺塔</h2><p style="text-align: left;font-family: 楷体">汉诺塔（Tower of Hanoi）传说越南河内某间寺院有三根银棒，上串 64 个金盘。寺院里的僧侣依照一个古老的预言，以上述规则移动这些盘子；预言说当这些盘子移动完毕，世界就会灭亡。这个传说叫做梵天寺之塔问题若传说属实，僧侣们需要步才能完成这个任务；若他们每秒可完成一个盘子的移动，就需要 5845 亿年才能完成。整个宇宙现在也不过 137 亿年。
+
+                                        
+
+ps：写这篇文章之前，我花了大约八分钟的时间来温习这道题，并在思考一个问题，汉诺塔问题究竟是分而治之还是减而治之。
+
+递归求解：
+
+首先明确一下递归的概念：把问题转化为规模缩小的同类问题的子问题。然后调用重复性过程来表示问题的解。
+
+这种算法可以分为两种方式，分而治之 和 减而治之。
+
+分而治之：将原问题划分为多个（通常情况下为两个）子问题，子问题的规模彼此近似相同。由子问题的解，得到原问题的解。
+
+</p></div><br><br><br><br><br><br><br><br><br><br><br><br><br>
+     <div class="eaasy" onclick="window.open('https://blog.csdn.net/qq_41722524/article/details/90704103')" style="text-align: center"><h2>快速排序及其优化</h2><p style="text-align: left;font-family: 楷体">算法思想：1.先从数组中取出一个元素作为枢轴，一般情况下选取数组的第一个。
+
+2.首尾相向遍历，从左边选取一个比枢轴大的数，从右边选择一个比枢轴小的数，然后交换这两个数；
+
+3.重复步骤2，直到在枢轴的左边都比枢轴小，枢轴右边的数都比枢轴大。
+
+时间复杂度：O(nlogn)
+
+//快速排序代码实现
+#include<iostream>
+#include<vector>
+using namespace std;
+ 
+int Division(int a[], int lef
+</p></div><br><br><br><br><br><br><br><br><br><br><br><br><br>
+     <div class="eaasy" onclick="window.open('https://blog.csdn.net/qq_41722524/article/details/85221245')" style="text-align: center"><h2>B树</h2><p style="text-align: left;font-family: 楷体">wikipipedia 如下描述
+In computer science, a B-tree is a self-balancing tree data structure that maintains sorted data and allows searches, sequential access, insertions, and deletions in logarithmic time. The B-tree is a generalization of a binary search tree in that a node can have more than two children.[1] Unlike self-balancing binary search trees, the B-tree is well suited for storage systems that read and write relatively large blocks of data, such as discs. It is commonly used in databases and file systems.
+B-树是一种自平衡树数据结构，它维护已排序的数据，并允许对数时间的搜索、顺序访问、插入和删除。B-树是二叉搜索树的推广，因为节点可以有两个以上的子树。[1]与自平衡二叉搜索树不同，B-树非常适合于读取和写入较大数据块（如磁盘）的存储系统。它通常用于数据库和文件系统中。
+
+</p></div><br><br><br><br><br><br><br><br><br><br><br><br><br>
+     <div class="eaasy" onclick="window.open('https://blog.csdn.net/qq_41722524/article/details/88376726')" style="text-align: center"><h2>BST二叉搜索树</h2><p style="text-align: left;font-family: 楷体">二叉查找树（Binary Search Tree），（又：二叉搜索树，二叉排序树）它或者是一棵空树，或者是具有下列性质的二叉树： 若它的左子树不空，则左子树上所有结点的值均小于它的根结点的值； 若它的右子树不空，则右子树上所有结点的值均大于它的根结点的值； 它的左、右子树也分别为二叉排序树。</p></div><br><br><br><br><br><br><br><br><br><br><br><br><br>
+     <div class="eaasy" onclick="window.open('https://blog.csdn.net/qq_41722524/article/details/90609937')" style="text-align: center"><h2>从排序数组中删除重复项</h2><p style="text-align: left;font-family: 楷体">给定一个排序数组，你需要在原地删除重复出现的元素，使得每个元素只出现一次，返回移除后数组的新长度。
+
+不要使用额外的数组空间，你必须在原地修改输入数组并在使用 O(1) 额外空间的条件下完成。
+
+ 给定数组 nums = [1,1,2], 
+
+函数应该返回新的长度 2, 并且原数组 nums 的前两个元素被修改为 1, 2。 
+你不需要考虑数组中超出新长度后面的元素。
+</p></div><br><br><br><br><br><br><br><br><br><br><br><br><br>
+     <div class="eaasy" onclick="window.open('https://blog.csdn.net/qq_41722524/article/details/90609937')" style="text-align: center"><h2>循环链表</h2><p style="text-align: left;font-family: 楷体">循环链表是另一种形式的链式存贮结构。它的特点是表中最后一个结点的指针域指向头结点，整个链表形成一个环。
+中文名 循环链表 外文名 cycle chain或circular linked list 分    类 单循环，多重链 属    性 另一种形式的链式存贮结构
+目录
+1 分类
+2 空链判断
+3 尾指针
+4 特点
+分类编辑
+循环链表
+循环链表
+（1）单循环链表——在单链表中，将终端结点的指针域NULL改为指向表头结点或开始结点即可。
+（2）多重链的循环链表——将表中结点链在多个环上 [1]  。
+空链判断编辑
+判断空链表的条件是
+         head==head->next;
+         rear==rear->next;</p></div><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<ul class="pagination modal-1">
+  <li><a href="#" class="prev">&laquo</a></li>
+  <li><a href="#" class="active">1</a></li>
+  <li> <a href="#">2</a></li>
+  <li> <a href="#">3</a></li>
+  <li> <a href="#">4</a></li>
+  <li> <a href="#">5</a></li>
+  <li> <a href="#">6</a></li>
+  <li> <a href="#">7</a></li>
+  <li> <a href="#">8</a></li>
+  <li> <a href="#">9</a></li>
+  <li><a href="#" class="next">&raquo;</a></li>
+</ul><br>
+    </div>
+    
+</body>
+</html>

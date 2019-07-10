@@ -1,0 +1,126 @@
+/* CSS Document */
+
+<style>
+        body{
+            background: #000 url('img/bg.jpg') no-repeat center top;
+        }
+        .wrap{
+            position: relative;
+            width: 300px;
+            height: 300px;
+            margin: 200px auto;
+            perspective: 2000px;
+        }
+        .wrap .bigger,.wrap .small{
+            transform-style: preserve-3d;
+            transform: rotateY(60deg);
+            transform-origin: top;
+            transition: all 2s;
+        }
+        .small{
+             animation: move 5s linear infinite;
+        }
+        .bigger{
+            animation: move 5s linear infinite;
+        }
+        .small div{
+            position: absolute;
+            top: 80px;
+            left: 80px;
+            width: 150px;
+            height: 150px;
+            transition: all 2s;
+            opacity: 0.7;
+        }
+        .bigger li{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 298px;
+            height: 298px;
+            border: 1px solid #fff;
+            transition: all 2s;
+        }
+        .small div:nth-child(1){
+            background: url('img/1.jpg');
+            transform: translateZ(75px);
+        }
+        .small div:nth-child(2){
+            background: url('img/2.jpg');
+            transform: translateZ(-75px);
+        }
+        .small div:nth-child(3){
+            background: url('img/3.jpg');
+            transform: rotateY(90deg) translateZ(75px);
+        }
+        .small div:nth-child(4){
+            background: url('img/4.jpg');
+            transform: rotateY(-90deg) translateZ(75px);
+        }
+        .small div:nth-child(5){
+            background: url('img/5.jpg');
+            transform: rotateX(90deg) translateZ(75px);
+        }
+        .small div:nth-child(6){
+            background: url('img/6.jpg');
+            transform: rotateX(-90deg) translateZ(75px);
+        }
+        .bigger li:nth-child(2){
+            background: hsla(0,50%,50%,.4);
+            transform: translateZ(150px);
+        }
+        .bigger li:nth-child(3){
+            background: hsla(60,50%,50%,.4);
+            transform: translateZ(-150px);
+        }
+        .bigger li:nth-child(4){
+            background: hsla(120,50%,50%,.4);
+            transform: rotateY(90deg) translateZ(150px);
+        }
+        .bigger li:nth-child(5){
+            background: hsla(180,50%,50%,.4);
+            transform: rotateY(-90deg) translateZ(150px);
+        }
+        .bigger li:nth-child(6){
+            background: hsla(240,50%,50%,.4);
+            transform: rotateX(90deg) translateZ(150px);
+        }
+        .bigger li:nth-child(7){
+            background: hsla(320,50%,50%,.4);
+            transform: rotateX(-90deg) translateZ(150px);
+        }
+        
+        .wrap:hover .bigger{
+             transform: rotateY(360deg);
+        }
+
+        .wrap:hover .bigger li:nth-child(2){
+           
+            transform: translateZ(300px);
+        }
+        .wrap:hover .bigger li:nth-child(3){
+           
+            transform: translateZ(-300px);
+        }
+        .wrap:hover .bigger li:nth-child(4){
+           
+            transform: rotateY(90deg) translateZ(300px);
+        }
+        .wrap:hover .bigger li:nth-child(5){
+           
+            transform: rotateY(-90deg) translateZ(300px);
+        }
+        .wrap:hover .bigger li:nth-child(6){
+            
+            transform: rotateX(90deg) translateZ(300px);
+        }
+        .wrap:hover .bigger li:nth-child(7){
+           
+            transform: rotateX(-90deg) translateZ(300px);
+        }
+        @keyframes move{
+            0%{ transform: rotateY(0deg); }
+            50%{ transform: rotateY(180deg); }
+            100%{ transform: rotateY(360deg); }
+        }
+    </style>
